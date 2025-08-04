@@ -87,7 +87,7 @@ const DeveloperSection: React.FC = () => {
         <div className="mb-20">
           <h3 className="text-3xl font-bold text-white mb-8 text-center">Technologies I Use</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6">
-            {technologies.map((tech, index) => {
+            {technologies.map((tech) => {
               const IconComponent = tech.icon;
               return (
                 <div
@@ -104,7 +104,7 @@ const DeveloperSection: React.FC = () => {
 
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <div
               key={project.title}
               className="bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105"

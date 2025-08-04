@@ -97,7 +97,7 @@ const DesignerSection: React.FC = () => {
         <div className="mb-20">
           <h3 className="text-3xl font-bold text-white mb-12 text-center">My Design Process</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {designProcess.map((process, index) => {
+            {designProcess.map((process) => {
               const IconComponent = process.icon;
               return (
                 <div
@@ -116,7 +116,7 @@ const DesignerSection: React.FC = () => {
 
         {/* Design Projects */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {designProjects.map((project, index) => (
+          {designProjects.map((project) => (
             <div
               key={project.title}
               className="bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105"
