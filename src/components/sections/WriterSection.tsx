@@ -97,7 +97,7 @@ const WriterSection: React.FC = () => {
         <div className="mb-20">
           <h3 className="text-3xl font-bold text-white mb-12 text-center">Writing Services</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {writingServices.map((service, index) => {
+            {writingServices.map((service) => {
               const IconComponent = service.icon;
               return (
                 <div
@@ -115,7 +115,7 @@ const WriterSection: React.FC = () => {
 
         {/* Writing Projects */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {writingProjects.map((project, index) => (
+          {writingProjects.map((project) => (
             <div
               key={project.title}
               className="bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105"
