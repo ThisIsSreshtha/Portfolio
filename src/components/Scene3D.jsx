@@ -1,16 +1,12 @@
 import React, { useRef, useEffect } from 'react';
 import * as THREE from 'three';
 
-interface Scene3DProps {
-  mousePosition: { x: number; y: number };
-}
-
-const Scene3D: React.FC<Scene3DProps> = ({ mousePosition }) => {
-  const mountRef = useRef<HTMLDivElement>(null);
-  const sceneRef = useRef<THREE.Scene | null>(null);
-  const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
-  const cameraRef = useRef<THREE.PerspectiveCamera | null>(null);
-  const particlesRef = useRef<THREE.Points | null>(null);
+const Scene3D = ({ mousePosition }) => {
+  const mountRef = useRef(null);
+  const sceneRef = useRef(null);
+  const rendererRef = useRef(null);
+  const cameraRef = useRef(null);
+  const particlesRef = useRef(null);
 
   useEffect(() => {
     if (!mountRef.current) return;
